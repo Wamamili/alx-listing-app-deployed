@@ -2,6 +2,7 @@
 import React from "react";
 import { PropertyProps } from "@/interfaces";
 import Image from "next/image";
+import "@/styles/globals.css";
 interface CardProps {
   property: PropertyProps;
 }

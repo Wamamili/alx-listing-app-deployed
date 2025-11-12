@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, ChangeEvent, FormEvent } from "react";
+import "@/styles/globals.css";
 
 interface BookingFormData {
   firstName: string;

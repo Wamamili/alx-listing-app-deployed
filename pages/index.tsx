@@ -18,6 +18,7 @@ export default function Home() {
         <title>Home | Property Listings</title>
       </Head>
 
+      {/* Hero Section */}
       <section
         className="relative bg-cover bg-center h-[75vh] flex items-center justify-center text-white px-4 text-center"
         style={{ backgroundImage: `url(${HERO_BACKGROUND})` }}
@@ -33,6 +34,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Filter Section */}
       <section className="bg-white px-4 sm:px-6 lg:px-8 py-6 border-b">
         <div className="flex gap-3 overflow-x-auto whitespace-nowrap no-scrollbar pb-2">
           {FILTER_OPTIONS.map((filter) => (
@@ -48,16 +50,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Property Listing Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-10 bg-gray-50">
         <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">
           Available Properties
         </h2>
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {PROPERTYLISTINGSAMPLE.map((property, index) => (
-            <PropertyCard
-              key={`${property.name}-${property.address.city}-${index}`}
-              property={property}
-            />
+            <PropertyCard key={index} property={property} />
           ))}
         </div>
       </section>
