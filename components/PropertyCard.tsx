@@ -1,7 +1,7 @@
 // components/PropertyCard.tsx
 import React from "react";
 import { PropertyProps } from "@/interfaces";
-
+import Image from "next/image";
 interface CardProps {
   property: PropertyProps;
 }
@@ -13,7 +13,7 @@ const PropertyCard: React.FC<CardProps> = ({ property }) => {
   style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}
 >
       <div className="relative h-24 md:h-26 w-full">
-        <img
+        <Image
           src={property.image}
           alt={`Image of ${property.name}`}
           className="object-cover w-full h-full"

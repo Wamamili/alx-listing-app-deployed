@@ -1,6 +1,5 @@
-import { PropertyProps } from "@/interfaces";
-
-export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
+// constants/index.ts
+export const PROPERTYLISTINGSAMPLE: any[] = [
   {
     name: "Villa Ocean Breeze",
     address: {
@@ -8,17 +7,16 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       city: "Bali",
       country: "Indonesia"
     },
-    rating: 4.89,
-    category: ["Luxury Villa", "Pool", "Free Parking"],
-    price: 3200,
+    rating: 4.9,
+    category: ["Beachfront", "Luxury", "Private Pool"],
+    price: 1200,
     offers: {
-      bed: "3",
+      bed: "4",
       shower: "3",
-      occupants: "4-6"
+      occupants: "6-8"
     },
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-    discount: ""
+    image: "/images/villa1.jpg",
+    discount: "10"
   },
   {
     name: "Mountain Escape Chalet",
@@ -27,7 +25,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       city: "Colorado",
       country: "USA"
     },
-    rating: 4.70,
+    rating: 4.7,
     category: ["Mountain View", "Fireplace", "Self Checkin"],
     price: 1800,
     offers: {
@@ -141,7 +139,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       city: "Surat Thani",
       country: "Thailand"
     },
-    rating: 4.80,
+    rating: 4.8,
     category: ["Garden", "Free Parking", "Self Checkin"],
     price: 2750,
     offers: {
@@ -160,7 +158,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       city: "Berlin",
       country: "Germany"
     },
-    rating: 4.60,
+    rating: 4.6,
     category: ["City Center", "Free WiFi", "24h Checkin"],
     price: 2000,
     offers: {
@@ -307,12 +305,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   }
 ];
 
-
-// constants/index.ts
 export const HERO_BACKGROUND =
   "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80";
 
-  // constants/index.ts
 export const FILTER_OPTIONS = [
   "Top Villa",
   "Self Check-in",
@@ -323,5 +318,5 @@ export const FILTER_OPTIONS = [
   "Budget Friendly",
   "Smart Home",
   "Private Pool",
-  "Remote Work Ready",
+  "Remote Work Ready"
 ];
