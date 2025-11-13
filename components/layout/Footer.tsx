@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "@/styles/globals.css";
 
 const Footer: React.FC = () => {
   return (
@@ -13,3 +12,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
